@@ -1,0 +1,9 @@
+image: gitpod/android:latest
+
+tasks:
+  - init: ./gradlew assembleDebug
+  - command: ./gradlew assembleDebug
+
+ports:
+  - port: 8081
+    onOpen: ignore
